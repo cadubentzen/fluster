@@ -233,7 +233,7 @@ class GStreamerLibavH266(GStreamer10Video):
     """GStreamer H.266 Libav decoder implementation for GStreamer 1.0"""
 
     codec = Codec.H266
-    decoder_bin = " avdec_h266 "
+    decoder_bin = " avdec_h266 allow-unaligned=TRUE "
     api = "Libav"
 
 
